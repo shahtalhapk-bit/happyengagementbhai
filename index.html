@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="ur" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>محسن حسین شاہ کو منگنی مبارک</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic:wght@400;600;700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            font-family: 'Noto Naskh Arabic', serif;
+            background:
+                radial-gradient(circle at 20% 20%, #5b4215 0%, transparent 25%),
+                radial-gradient(circle at 80% 80%, #3b0c21 0%, transparent 30%),
+                linear-gradient(135deg, #090909, #180b12, #080808);
+            color: white;
+            overflow-x: hidden;
+        }
+
+        /* GOLD PARTICLES */
+
+        .particles span {
+            position: fixed;
+            width: 4px;
+            height: 4px;
+            background: #d7ad55;
+            border-radius: 50%;
+            animation: sparkle 5s linear infinite;
+            opacity: 0;
+        }
+
+        .particles span:nth-child(1) { left: 10%; animation-delay: 0s; }
+        .particles span:nth-child(2) { left: 20%; animation-delay: 1s; }
+        .particles span:nth-child(3) { left: 30%; animation-delay: 2s; }
+        .particles span:nth-child(4) { left: 40%; animation-delay: 3s; }
+        .particles span:nth-child(5) { left: 50%; animation-delay: 1.5s; }
+        .particles span:nth-child(6) { left: 60%; animation-delay: 2.5s; }
+        .particles span:nth-child(7) { left: 70%; animation-delay: .5s; }
+        .particles span:nth-child(8) { left: 80%; animation-delay: 3.5s; }
+        .particles span:nth-child(9) { left: 90%; animation-delay: 1.2s; }
+
+        @keyframes sparkle {
+            0% {
+                top: 100%;
+                opacity: 0;
+            }
+
+            30% {
+                opacity: 1;
+            }
+
+            100% {
+                top: -10%;
+                opacity: 0;
+            }
+        }
+
+        /* MAIN */
+
+        .wrapper {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 30px 15px;
+        }
+
+        .box {
+            width: 100%;
+            max-width: 850px;
+            text-align: center;
+            padding: 55px 30px;
+            position: relative;
+
+            background: rgba(255,255,255,0.055);
+            border: 1px solid rgba(212,170,75,0.55);
+            border-radius: 35px;
+
+            box-shadow:
+                0 0 60px rgba(212,170,75,0.12),
+                inset 0 0 50px rgba(255,255,255,0.025);
+
+            backdrop-filter: blur(15px);
+            animation: appear 1.5s ease;
+        }
+
+        @keyframes appear {
+            from {
+                opacity: 0;
+                transform: translateY(30px) scale(.96);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0) scale(1);
+            }
+        }
+
+        /* BISMILLAH */
+
+        .bismillah {
+            font-size: 24px;
+            color: #e5c06b;
+            margin-bottom: 15px;
+        }
+
+        .small {
+            color: #c9a858;
+            letter-spacing: 2px;
+            font-size: 16px;
+            margin-bottom: 15px;
+        }
+
+        /* ================================
+           BEAUTIFUL ANIMATED DIAMOND RING
+           ================================ */
+
+        .ring-area {
+            height: 180px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto 10px;
+        }
+
+        .ring {
+            position: relative;
+            width: 105px;
+            height: 105px;
+
+            border: 7px solid #d7ae55;
+            border-radius: 50%;
+
+            box-shadow:
+                0 0 15px #d7ae55,
+                0 0 35px rgba(215,174,85,.6),
+                inset 0 0 15px rgba(215,174,85,.25);
+
+            animation:
+                ringFloat 3s ease-in-out infinite,
+                ringGlow 2s ease-in-out infinite;
+        }
+
+        /* Ring setting */
+
+        .ring::after {
+            content: "";
+
+            position: absolute;
+
+            width: 46px;
+            height: 46px;
+
+            border: 5px solid #e1bd65;
+            border-radius: 50%;
+
+            top: -33px;
+            left: 22px;
+
+            box-shadow:
+                0 0 15px rgba(225,189,101,.7);
+        }
+
+        /* Diamond */
+
+        .diamond {
+            position: absolute;
+
+            width: 44px;
+            height: 44px;
+
+            top: -42px;
+            left: 30px;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #ffffff 0%,
+                    #c9f5ff 35%,
+                    #ffffff 50%,
+                    #a9e9ff 70%,
+                    #ffffff 100%
+                );
+
+            transform: rotate(45deg);
+
+            border: 3px solid white;
+
+            box-shadow:
+                0 0 10px white,
+                0 0 25px #b8efff,
+                0 0 50px rgba(185,239,255,.8);
+
+            animation:
+                diamondPulse 1.7s ease-in-out infinite,
+                diamondShine 2.5s linear infinite;
+        }
+
+        /* Diamond sparkle */
+
+        .diamond::before {
+            content: "✦";
+
+            position: absolute;
+
+            color: white;
+
+            font-size: 30px;
+
+            top: 4px;
+            left: 7px;
+
+            transform: rotate(-45deg);
+
+            text-shadow:
+                0 0 8px white,
+                0 0 18px #b8efff,
+                0 0 30px white;
+
+            animation: sparkleDiamond 1s infinite alternate;
+        }
+
+        .diamond::after {
+            content: "";
+
+            position: absolute;
+
+            width: 70px;
+            height: 3px;
+
+            background: white;
+
+            top: 20px;
+            left: -13px;
+
+            transform: rotate(-45deg);
+
+            opacity: 0;
+
+            box-shadow: 0 0 10px white;
+
+            animation: lightSweep 2.5s infinite;
+        }
+
+        @keyframes ringFloat {
+
+            0%, 100% {
+                transform: translateY(0) rotate(-4deg);
+            }
+
+            50% {
+                transform: translateY(-10px) rotate(4deg);
+            }
+        }
+
+        @keyframes ringGlow {
+
+            0%, 100% {
+                filter: brightness(1);
+            }
+
+            50% {
+                filter: brightness(1.4);
+            }
+        }
+
+        @keyframes diamondPulse {
+
+            0%, 100% {
+                transform: rotate(45deg) scale(1);
+            }
+
+            50% {
+                transform: rotate(45deg) scale(1.15);
+            }
+        }
+
+        @keyframes sparkleDiamond {
+
+            from {
+                opacity: .4;
+                transform: rotate(-45deg) scale(.7);
+            }
+
+            to {
+                opacity: 1;
+                transform: rotate(-45deg) scale(1.3);
+            }
+        }
+
+        @keyframes diamondShine {
+
+            0%, 70%, 100% {
+                filter: brightness(1);
+            }
+
+            80% {
+                filter: brightness(2);
+            }
+        }
+
+        @keyframes lightSweep {
+
+            0% {
+                opacity: 0;
+                transform: rotate(-45deg) translateX(-35px);
+            }
+
+            40% {
+                opacity: 1;
+            }
+
+            70% {
+                opacity: 0;
+                transform: rotate(-45deg) translateX(35px);
+            }
+
+            100% {
+                opacity: 0;
+            }
+        }
+
+        /* TITLE */
+
+        h1 {
+            font-size: 60px;
+            color: #f1d27b;
+
+            text-shadow:
+                0 0 20px rgba(241,210,123,.25);
+
+            margin-bottom: 10px;
+        }
+
+        .gold-line {
+            width: 180px;
+            height: 2px;
+
+            margin: 15px auto 30px;
+
+            background: linear-gradient(
+                90deg,
+                transparent,
+                #e2b957,
+                transparent
+            );
+        }
+
+        /* DATE */
+
+        .date {
+            color: #e5bd5d;
+            font-size: 22px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        /* PYARE BHAI */
+
+        .brother {
+            font-size: 27px;
+            color: #e5bd5d;
+            margin-bottom: 5px;
+        }
+
+        /* NAME */
+
+        .name {
+            font-size: 52px;
+            font-weight: bold;
+            color: #fff;
+
+            margin: 5px 0 15px;
+
+            text-shadow:
+                0 0 25px rgba(255,255,255,.15);
+        }
+
+        .heart {
+            font-size: 32px;
+            color: #d9ad4c;
+
+            animation: heart 1.5s infinite;
+        }
+
+        @keyframes heart {
+
+            0%, 100% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.2);
+            }
+        }
+
+        /* MESSAGE */
+
+        .message {
+            max-width: 680px;
+
+            margin: 25px auto;
+
+            font-size: 24px;
+
+            line-height: 2.3;
+
+            color: #f4e9d1;
+        }
+
+        .highlight {
+            color: #e5bd5d;
+            font-weight: bold;
+        }
+
+        /* DUA */
+
+        .dua {
+            margin: 35px auto 20px;
+
+            padding: 25px;
+
+            max-width: 650px;
+
+            border-top: 1px solid rgba(218,180,89,.35);
+            border-bottom: 1px solid rgba(218,180,89,.35);
+
+            color: #dfc37c;
+
+            font-size: 22px;
+
+            line-height: 2.2;
+        }
+
+        /* BUTTON */
+
+        button {
+            margin-top: 25px;
+
+            padding: 13px 35px;
+
+            background: transparent;
+
+            color: #e4bd61;
+
+            border: 1px solid #cda64f;
+
+            border-radius: 50px;
+
+            font-family: inherit;
+
+            font-size: 18px;
+
+            cursor: pointer;
+
+            transition: .4s;
+        }
+
+        button:hover {
+            background: #d0a94f;
+
+            color: #160c0c;
+
+            box-shadow:
+                0 0 25px rgba(208,169,79,.35);
+
+            transform: translateY(-3px);
+        }
+
+        /* CREDIT */
+
+        .credit {
+            margin-top: 40px;
+
+            color: #9c8b72;
+
+            font-size: 17px;
+
+            line-height: 2;
+        }
+
+        .credit strong {
+            color: #d9b45d;
+
+            font-size: 21px;
+        }
+
+        /* MOBILE */
+
+        @media(max-width:600px) {
+
+            .box {
+                padding: 45px 18px;
+            }
+
+            h1 {
+                font-size: 40px;
+            }
+
+            .name {
+                font-size: 38px;
+            }
+
+            .brother {
+                font-size: 23px;
+            }
+
+            .message {
+                font-size: 19px;
+                line-height: 2;
+            }
+
+            .dua {
+                font-size: 18px;
+            }
+
+            .ring-area {
+                height: 160px;
+            }
+
+            .ring {
+                width: 90px;
+                height: 90px;
+            }
+
+            .diamond {
+                width: 38px;
+                height: 38px;
+                left: 25px;
+                top: -38px;
+            }
+
+            .ring::after {
+                width: 40px;
+                height: 40px;
+                left: 19px;
+            }
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- GOLD PARTICLES -->
+
+    <div class="particles">
+
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+
+    </div>
+
+
+    <div class="wrapper">
+
+        <div class="box">
+
+
+            <div class="bismillah">
+                بِسْمِ اللّٰهِ الرَّحْمٰنِ الرَّحِيْمِ
+            </div>
+
+
+            <div class="small">
+                ایک خوبصورت خوشی کا لمحہ
+            </div>
+
+
+            <!-- ANIMATED DIAMOND RING -->
+
+            <div class="ring-area">
+
+                <div class="ring">
+
+                    <div class="diamond"></div>
+
+                </div>
+
+            </div>
+
+
+            <h1>
+                منگنی مبارک
+            </h1>
+
+
+            <div class="gold-line"></div>
+
+
+            <!-- DATE -->
+
+            <div class="date">
+                📅 ۱۳ ستمبر ۲۰۲۶
+            </div>
+
+
+            <div class="brother">
+                میرے پیارے بھائی
+            </div>
+
+
+            <div class="name">
+                محسن حسین شاہ
+            </div>
+
+
+            <div class="heart">
+                ♥
+            </div>
+
+
+            <p class="message">
+
+                الحمدللہ!
+
+                <br>
+
+                <span class="highlight">
+                    محسن حسین شاہ کو منگنی کی بہت بہت مبارک ہو!
+                </span>
+
+                <br>
+
+                اللہ تعالیٰ اس خوبصورت نئے رشتے کو
+                محبت، خوشیوں اور برکتوں سے بھر دے۔
+
+                <br>
+
+                آپ کی آنے والی زندگی ہمیشہ
+                خوشیوں سے بھری رہے۔
+
+                <br>
+
+                آمین یا رب العالمین 🤲
+
+            </p>
+
+
+            <div class="dua">
+
+                🌙
+
+                اللہ تعالیٰ اس نئے رشتے میں
+                بے شمار محبت، اتفاق، خوشیاں اور برکتیں عطا فرمائے،
+                اور ہمیشہ اپنی رحمت کے سائے میں رکھے۔
+
+                <br>
+
+                آمین یا رب العالمین 🤍
+
+            </div>
+
+
+            <button onclick="celebrate()">
+
+                ✨ خصوصی پیغام
+
+            </button>
+
+
+            <div class="credit">
+
+                محبت اور دعاؤں کے ساتھ
+
+                <br>
+
+                <strong>
+                    Qadeer Hussain Shah
+                </strong>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+    <script>
+
+        function celebrate() {
+
+            alert(
+                "میرے پیارے بھائی محسن حسین شاہ کو منگنی بہت بہت مبارک ہو! 💍✨\n\n" +
+                "اللہ پاک آپ کی آنے والی زندگی کو خوشیوں، محبت اور برکتوں سے بھر دے۔ آمین 🤲"
+            );
+
+        }
+
+    </script>
+
+
+</body>
+
+</html>
